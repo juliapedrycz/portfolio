@@ -1,0 +1,95 @@
+.projects-container {
+    /* background: linear-gradient(346deg, rgba(168,141,164,1) 0%, rgba(147,147,223,1) 39%, rgba(255,255,255,1) 100%); */
+    /*background: linear-gradient(90deg, rgba(214,195,211,1) 0%, rgba(255,255,255,1) 45%, rgba(214,195,211,1) 100%);*/
+    background: linear-gradient(90deg, rgb(179,187,220)   0%, rgba(255,255,255,1) 45%, rgb(179,187,220)  100%);
+    flex-flow: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10vh;
+}
+
+@media only screen and (max-width: 850px) {
+    .projects-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+    }
+}
+.project-card-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    padding: 1vh;
+}
+.project-card-container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.4);
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 2vh;
+    width: 25%;
+    box-shadow: 0 6px 20px rgba(172, 173, 175, 0.53);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+}
+
+@media only screen and (max-width: 850px) {
+    .project-card-container {
+        width: 80%;
+        margin-top: 3vh;
+    }
+}
+
+.project-card-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    margin-left: 1vw;
+    max-width: 50%;
+}
+
+.project-card-row > img {
+    width: 10vw;
+    height: 10vw;
+}
+
+.project-card-row-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+}
+
+.project-card-row-text > a {
+    color: dimgrey;
+    font-size: 20px;
+    max-width: 100%;
+}
+
+.project-card-links > a {
+    color: dimgrey;
+    font-size: 32px;
+    max-width: 100%;
+}
+
+.project-card-icon-row > a {
+    color: dimgrey;
+    font-size: 15px;
+}
+
+.project-card-icon-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+}
+
+.project-card-icon-row > svg {
+    margin-right: 5px;
+}

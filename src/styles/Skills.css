@@ -1,0 +1,116 @@
+
+.programming_languages { grid-area: programming_languages; }
+.tech_skills { grid-area: tech_skills; }
+.soft_skills { grid-area: soft_skills; }
+.languages { grid-area: languages; }
+.others { grid-area: others; }
+.frameworks { grid-area: frameworks; }
+.version_control { grid-area: version_control; }
+
+
+
+.skills-container {
+    background: linear-gradient(90deg, rgb(179,187,220)   0%, rgba(255,255,255,1) 45%, rgb(179,187,220)  100%);
+    height: 100vh;
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.programming_languages > a {
+    color: #6778ba;
+    align-self: center;
+}
+.programming_languages > ul {
+    color: dimgrey;
+    line-height:180%;
+    list-style-type: none;
+}
+.tech_skills > a {
+    color: #6778ba;
+    align-self: center;
+}
+.tech_skills > ul {
+    color: dimgrey;
+    line-height:180%;
+    list-style-type: none;
+}
+.soft_skills > a {
+    color: #6778ba;
+    align-self: center;
+}
+.soft_skills > ul {
+    color: dimgrey;
+    line-height:180%;
+    list-style-type: none;
+}
+.languages > a {
+    color: #6778ba;
+    align-self: center;
+}
+.languages > ul {
+    color: dimgrey;
+    line-height:180%;
+    list-style-type: none;
+}
+.others > a {
+    color: #6778ba;
+    align-self: center;
+}
+.others > ul {
+    color: dimgrey;
+    line-height:180%;
+    list-style-type: none;
+}
+.frameworks > a {
+    color: #6778ba;
+    align-self: center;
+}
+.frameworks > ul {
+    color: dimgrey;
+    line-height:180%;
+    list-style-type: none;
+}
+.version_control > a {
+    color: #6778ba;
+    align-self: center;
+}
+.version_control > ul {
+    color: dimgrey;
+    line-height:180%;
+    list-style-type: none;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'programming_languages languages tech_skills  '
+    'programming_languages frameworks tech_skills  '
+    'programming_languages frameworks soft_skills  '
+    'others frameworks soft_skills  '
+    'others version_control  soft_skills';
+    grid-gap: 20px;
+    padding: 20px;
+    height: 90vh;
+    max-height: 90%;
+    width: 90vw;
+}
+
+.grid-container > div {
+    padding: 20px;
+    font-size: 3vh;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(172, 173, 175, 0.53);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+}
+
+.skills-card-container {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    background: white;
+}
