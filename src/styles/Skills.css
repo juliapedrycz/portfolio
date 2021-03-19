@@ -1,19 +1,15 @@
-
 .programming_languages { grid-area: programming_languages; }
 .tech_skills { grid-area: tech_skills; }
 .soft_skills { grid-area: soft_skills; }
 .languages { grid-area: languages; }
-.others { grid-area: others; }
 .frameworks { grid-area: frameworks; }
 .version_control { grid-area: version_control; }
 
-
-
 .skills-container {
     background: linear-gradient(90deg, rgb(179,187,220)   0%, rgba(255,255,255,1) 45%, rgb(179,187,220)  100%);
-    height: 100vh;
     width: 100%;
-    max-height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,18 +78,24 @@
     line-height:180%;
     list-style-type: none;
 }
+@media only screen and (max-width: 850px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .grid-container{
     display: grid;
     grid-template-areas:
-    'programming_languages languages tech_skills  '
-    'programming_languages frameworks tech_skills  '
-    'programming_languages frameworks soft_skills  '
-    'others frameworks soft_skills  '
-    'others version_control  soft_skills';
+    'programming_languages languages soft_skills  '
+    'programming_languages tech_skills soft_skills '
+    'frameworks tech_skills soft_skills  '
+    'frameworks tech_skills  version_control';
     grid-gap: 20px;
     padding: 20px;
     height: 90vh;
+    text-align: start;
     max-height: 90%;
     width: 90vw;
 }

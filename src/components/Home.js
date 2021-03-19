@@ -53,7 +53,7 @@ function Home() {
         </div>
         <div className="home-container">
 
-          <img src="%PUBLIC_URL%/images/desk.jpg"/>
+          <img src={`${process.env.PUBLIC_URL}/images/desk.jpg`}/>
           <p>Hi, I am</p>
           <a>Julia Pedrycz</a>
           <div className='home-btns'>

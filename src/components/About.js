@@ -6,7 +6,7 @@ function About() {
 return(
     <>
       <div className="about-container">
-        <img src="/images/me.jpg"/>
+        <img src={`${process.env.PUBLIC_URL}/images/me.jpg`}/>
         <div className="about-text-container">
           <a>Hi, I'm Julia Pedrycz, <br/>
           I'm hardworking and energetic IT student with many other passions such as painting, embroidery and icons writing. My strongest attributes are patience, punctuality and friendliness. <br/>
@@ -25,7 +25,7 @@ return(
           </a>
 
           <div className="about-btn-container">
-            <Button linkTo={'/Julia_pedrycz_resume.pdf'}
+            <Button linkTo={`${process.env.PUBLIC_URL}/Julia_Pedrycz_resume.pdf`}
                     className='btns'
                     buttonStyle='btn--resume'
             >
